@@ -1,0 +1,16 @@
+{
+    "name": "go-react-dev",
+	"build": {
+        "dockerfile": "Dockerfile"
+    },
+  "mounts": [
+  "type=bind,source=${localEnv:HOME}/.kube,target=/home/vscode/.kube,readonly"
+],
+	"remoteUser": "vscode",
+	"forwardPorts": [
+		3000,
+    52660
+	],
+	"customizations": {
+	}
+}
